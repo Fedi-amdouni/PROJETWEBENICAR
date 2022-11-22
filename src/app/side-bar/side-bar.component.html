@@ -1,100 +1,77 @@
-<div class="sidebar-main">
-    <div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
-    
-      <!-- Sidebar content -->
-      <div class="sidebar-content">
-    
-        <!-- User menu -->
-        <div class="sidebar-section sidebar-user my-1">
-          <div class="sidebar-section-body">
-            <div class="media">
-              <a href="#" class="mr-3">
-                <img src="../../../../global_assets/images/demo/users/face11.jpg" class="rounded-circle" alt="">
-              </a>
-    
-              <div class="media-body">
-                <div class="font-weight-semibold">Victoria Baker</div>
-                <div class="font-size-sm line-height-sm opacity-50">
-                  Senior developer
-                </div>
-              </div>
-    
-              <div class="ml-3 align-self-center">
-                <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
-                  <i class="icon-transmission"></i>
-                </button>
-    
-                <button type="button" class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
-                  <i class="icon-cross2"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /user menu -->
-    
-    
-        <!-- Main navigation -->
-        <div class="sidebar-section">
-          <ul class="nav nav-sidebar" data-nav-type="accordion">
-    
-            <!-- Main -->
-            <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="icon-home4"></i>
-                <span>
-                  Home
-                </span>
-              </a>
-            </li>
-            <li class="nav-item nav-item-submenu">
-              <a  class="nav-link"><i class="icon-copy"></i> <span>Stages</span></a>
-    
-              <ul class="nav nav-group-sub" data-submenu-title="Layouts">
-    
-                <li class="nav-item"><a href="#" class="nav-link" > Voir les Stages</a></li>
-    
-                <li class="nav-item"><a href="#"  class="nav-link" >Ajouter un stage</a></li>
-                
-    
-              </ul>
-            </li>
-            <li class="nav-item nav-item-submenu">
-              <a  class="nav-link" ><i class="icon-color-sampler"></i> <span>Stagiaires</span></a>
-    
-              <ul class="nav nav-group-sub" data-submenu-title="Themes">
-    
-                <li class="nav-item"><a href="#"  class="nav-link" >Ajout stagiaire</a></li>
-                <li class="nav-item"><a  class="nav-link">Modifier stagiaire</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"  >Liste des Stagiaires </a></li>
-              </ul>
-            </li>
-            <li class="nav-item nav-item-submenu">
-              <a class="nav-link" ><i class="icon-stack"></i> <span>Encadreurs</span></a>
-    
-              <ul class="nav nav-group-sub" data-submenu-title="Starter kit">
-                <li class="nav-item"><a href="#" class="nav-link"> Voir les encadreurs</a></li>
-    
-    
-              </ul>
-            </li>
-    
-    
-    
-    
-    
-    
-    
-        <!-- /main navigation -->
-    
-    
-      <!-- /sidebar content -->
-    
-    
-    </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-    
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 06</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+  </head>
+  <body>
+		
+		<div class="container d-flex align-items-stretch">
+			<nav id="sidebar" class="img" >
+				<div class="p-4">
+		  		
+	        <ul class="list-unstyled components mb-5">
+            <br>
+			<div >
+				
+				<img class="dd"async src="https://scontent.ftun7-1.fna.fbcdn.net/v/t1.15752-9/316377491_1291706554703426_4727438334714971365_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=w7cC5pb57vUAX_CQyfA&_nc_ht=scontent.ftun7-1.fna&oh=03_AdQZC_4_zSXKl6e3X4VCefxGEYr4NEfhbJdDPHbzdAAo2Q&oe=63A35B13" width="400" height="250" >
+			
+			</div>
+	          <li class="active">
+	            <a class="aa" href="#"><span class="fa fa-home mr-3" routerLink="./home"></span> Home</a>
+	          </li>
+            <br>
+	          <li>
+	              <a class="aa" href="../ajoutProduit"><span class="fa fa-user mr-3" ></span> Ajouter un produit</a>
+	          </li>
+            <br>
+	          <li>
+              <a class="aa" href="../Produits"><span class="fa fa-plane mr-3"></span> Consulter tous les produits</a>
+	          </li>
+            <br>
+	          <li>
+              <a class="aa" href="../mesProduits"><span class="fa fa-sticky-note mr-3"></span> Consulter mes propres produits</a>
+	          </li>
+            <br>
+			<li>
+				<a class="aa" href="../monPanier"><span class="fa fa-shopping-basket mr-3"></span> Mon panier</a>
+				</li>
+			  <br>
+			  <br>
+			  <br>
+			  
+			  <br>
+			  
+	         
+	        </ul>
+			<div>
+				<button class="btn btn-primary" (click)="logout()">LOGOUT</button>
+				</div>
+
+	        </div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			</nav>
+			</div>
+			
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+	<script> window.history.forward();</script>
+  </body>
+</html>

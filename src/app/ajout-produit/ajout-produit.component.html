@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact Form 06</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+</head>
+<body>
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+
+      
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <div class="row no-gutters mb-5">
+              <div class="col-md-7">
+                <div class="contact-wrap w-100 p-md-5 p-4">
+                  <h3 class="mb-4">Ajouter un produit </h3>
+                  <div id="form-message-warning" class="mb-4"></div>
+
+                  <form [formGroup]="ajoutProduitForm" id="contactForm" name="contactForm" class="contactForm">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="NOM">Nom du produit</label>
+                          <input formControlName="NOM" type="text" class="form-control" name="name" id="name" placeholder="NOM ">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="NUMERO">Numéro dU produit</label>
+                          <input formControlName="NUMERO" type="number" class="form-control" name="NUMERO" id="NUMERO" placeholder="NUMERO">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="CATEGORIE">Catégorie du produit</label>
+                          <input formControlName="CATEGORIE" type="text" class="form-control" name="catégorie" id="catégorie" placeholder="CATEGORIE">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="FOURNISSEUR">Fournisseur du produit</label>
+                          <input formControlName="FORUNISSEUR" type="text" class="form-control" name="email" id="email" placeholder="FOURNISSEUR">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="DESCRIPTION">Description du produit </label>
+                          <input formControlName="DESCRIPTION" type="text" class="form-control" name="DESCRIPTION" id="DESCRIPTION" placeholder="DESCRIPTION">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="PRIXHT">Prix Hors Taxe</label>
+                          <input formControlName="PRIXHT" type="number" class="form-control" name="PRIXHT" id="PRIXHT" placeholder="PRIXHT">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="TVA">TVA </label>
+                          <input formControlName="TVA" type="number" class="form-control" name="TVA" id="TVA" placeholder="TVA">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="PRIXTTC">Prix TTC </label>
+                          <input formControlName="PRIXTTC" type="number" class="form-control" name="PRIXTTC" id="PRIXTTC" placeholder="PRIX TTC">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label class="label" for="ETAT">Etat </label>
+                          <input formControlName="ETAT" type="text" class="form-control" name="ETAT" id="ETAT" placeholder=" ETAT">
+                        </div>
+                        
+                      </div>
+                     
+                        
+                        <br>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="label" for="ETAT">Votre Email</label>
+                            <input formControlName="EMAIL" type="text" class="form-control" name="EMAIL" id="EMAIL" placeholder=" VOTRE EMAIL">
+                          </div>
+                          <br>
+                        </div>
+                      
+
+                      
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <button type="submit"  class="btn btn-primary btn-block"  style="background-color: #1A4B93 ;  border: none" (click)="onsubmit()" >Ajouter le produit </button>
+                          <div class="submitting"></div>
+                        </div>
+                      </div>
+
+                      
+
+
+                    </div>
+                  </form>
+                
+             
+              <div class="col-md-5 d-flex align-items-stretch">
+                <div id="map">
+                </div>
+              </div>
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+            
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script> window.history.forward();</script>
+</body>
+</html>
+

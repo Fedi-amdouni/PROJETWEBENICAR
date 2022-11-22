@@ -10,7 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^14.1.0",
     "@angular/common": "^14.1.0",
     "@angular/compiler": "^14.1.0",
     "@angular/core": "^14.1.0",
@@ -18,7 +17,13 @@
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
+    "@material/toolbar": "^2.3.0",
+    "@syncfusion/ej2-angular-navigations": "^20.3.56",
+    "angular-material": "^1.2.5",
+    "angular-material-data-table": "^0.10.10",
     "bootstrap": "^5.2.2",
+    "ng-angular-popup": "^0.2.0",
+    "ng-sidebar": "^9.4.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

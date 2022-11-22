@@ -1,0 +1,46 @@
+<table  class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">NUMERO</th>
+        <th scope="col">NOM</th>
+        <th scope="col">CATEGORIE</th>
+        <th scope="col">FOURNISSEUR</th>
+        <th scope="col">DESCRIPTION</th>
+        <th scope="col">PRIXHT</th>
+        <th scope="col">TVA</th>
+        <th scope="col">PRIXTTC</th>
+        <th scope="col">ETAT</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">Supprimer</th>
+        
+        
+  
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of LADATA">
+        <td>{{data.NUMERO}}</td>
+        <td>{{data.NOM}}</td>
+        <td>{{data.CATEGORIE}}</td>
+        <td>{{data.FORUNISSEUR}}</td>
+        <td>{{data.DESCRIPTION}}</td>
+        <td>{{data.PRIXHT}}</td>
+        <td>{{data.TVA}}</td>
+        <td>{{data.PRIXTTC}}</td>
+        <td>{{data.ETAT}}</td>
+        <td>{{data.EMAIL}}</td>
+        <td><button class="btn btn-primary" type="button" (click)="supprimer(data)">Supprimer</button></td>
+        
+       
+      </tr>
+      <br>
+      <br>
+      
+    </tbody>
+  </table>
+  <div class="a">
+    <button class="btn btn-secondary" type="button" (click)="commander()" >Passer mes commandes</button>
+  </div>
+  <script> window.history.forward();</script>
+  

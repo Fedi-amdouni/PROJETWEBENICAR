@@ -7,7 +7,7 @@
     
 </style>
 
-<body Style ="background-image:url(https://www.juridica.fr/sharedfs/2019/12/Facebook-shutterstock_461355724.jpg)">
+<body Style ="background-image:url(https://www.moovapps.com/wp-content/uploads/2019/07/outils-de-prise-de-commande.jpg)">
     
     <!-- Main navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-static">
@@ -35,7 +35,7 @@
           <div style="position: right;" class="content d-flex justify-content-center align-items-center" >
 
             <!-- Login form -->
-            <form  >
+            <form [formGroup]="registerForm" >
               <div class="card mb-0" style="width: 600px;color: #1A4B93; background:rgba(196, 195, 204, 0.045)"  >
                 <div class="card-body">
                   <div class="text-center mb-3">
@@ -47,7 +47,7 @@
                 
 
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input  type="email" class="form-control" placeholder="Entrer votre adresse email"  formControlName="adresseEmail">
+                    <input  type="email" class="form-control" placeholder="Entrer votre adresse email"  formControlName="EMAIL">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -55,7 +55,7 @@
                   </div>
                   <br>
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input  type="password" class="form-control" placeholder="Entrer votre mot de passe" formControlName="password">
+                    <input  type="password" class="form-control" placeholder="Entrer votre mot de passe" formControlName="PASSWORD">
 
                     <div class="form-control-feedback">
                       <i class="icon-lock2 text-muted"></i>
@@ -64,7 +64,7 @@
                 <br>
                   
                     <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input type="email" class="form-control" placeholder="Entrer votre nom"  formControlName="nom">
+                    <input type="text" class="form-control" placeholder="Entrer votre nom"  formControlName="NOM">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -72,7 +72,7 @@
                   </div>
                   <br>
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input type="email" class="form-control" placeholder="Entrer votre prenom"  formControlName="prenom">
+                    <input type="text" class="form-control" placeholder="Entrer votre prenom"  formControlName="PRENOM">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -80,7 +80,7 @@
                   </div>
                   <br>
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input type="email" class="form-control" placeholder="Entrer votre adresse"  formControlName="adresse">
+                    <input type="text" class="form-control" placeholder="Entrer votre pays"  formControlName="PAYS">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -88,7 +88,7 @@
                   </div>
                   <br>
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input type="email" class="form-control" placeholder="Entrer votre ville"  formControlName="nom">
+                    <input type="text" class="form-control" placeholder="Entrer votre ville"  formControlName="VILLE">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -96,7 +96,7 @@
                   </div>
                   <br>
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input type="email" class="form-control" placeholder="Entrer votre pays"  formControlName="pays">
+                    <input type="text" class="form-control" placeholder="Entrer votre adresse"  formControlName="ADRESSE">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -104,7 +104,7 @@
                   </div>
                   <br>
                   <div class="form-group form-group-feedback form-group-feedback-left">
-                    <input type="email" class="form-control" placeholder="Entrer votre numéro de téléphone"  formControlName="num_tel">
+                    <input type="number" class="form-control" placeholder="Entrer votre numéro de téléphone"  formControlName="NUMTEL">
 
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
@@ -115,7 +115,7 @@
           
                   <div class="form-group" >
 
-                    <button type="submit"   class="btn btn-primary btn-block" style="background-color: #1A4B93 ;  border: none" >Créer le compte </button>
+                    <button type="submit"   class="btn btn-primary btn-block" style="background-color: #1A4B93 ;  border: none" (click)="onsubmit()" >Créer le compte </button>
                   </div>
                   <br>
                   <button class=" btn btn-primary btn-block " style="background-color: #0f0f0f ;  border: none"   routerLink="..//login" >Déja utilisateur ? Connectez-vous ici ! </button>
